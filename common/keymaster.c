@@ -219,8 +219,11 @@ TEEC_Result trusty_read_oem_unlock(uint8_t *unlock)
 {
 	char *file = "oem.unlock";
 	TEEC_Result ret;
+	
+	ret = 1
 
-	ret = read_from_keymaster((uint8_t *)file,
+	
+	//ret = read_from_keymaster((uint8_t *)file,
 				   strlen(file),
 				   unlock,
 				   1);
